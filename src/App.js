@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import LoginPage from "./components/LoginPage";
 import './App.css';
+import SignupPage from './components/SignupPage';
+import EntryForm from './components/TestResultsFormPage';
+import SmartReport from './components/SmartReportPage';
+import RenderHistory from './components/RenderHistory';
+import EditPage from './components/EditPage';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+const App=()=>(
+  <BrowserRouter>
+  <div>
+   
+    <Routes>
+    <Route exact path="/" element={<LoginPage/>}/>
+      <Route exact path="/signup" element={<SignupPage/>}/>
+      <Route exact path="/userhealth-report" element={<EntryForm/>}/>
+      <Route exact path="/smart-report" element={<SmartReport/>}/>
+      <Route exact path="/history" element={<RenderHistory/>}/>
+      <Route exact path="/edit" element={<EditPage/>}/>
+      
+    </Routes>
+  </div>
+  </BrowserRouter>
+)
 
 export default App;
