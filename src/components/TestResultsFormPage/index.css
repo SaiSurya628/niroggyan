@@ -1,0 +1,152 @@
+/* button{
+    width:100px;
+    height:10px;
+    border-radius: 10px;
+    color:red;
+}
+.main-container{
+   border-top:25px solid skyblue;
+   border-bottom: 25px  solid blue;
+  height: 100vh;
+ 
+}
+.logo{
+    height:80px;
+    width:100px;
+}
+.heading{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color:#0d6efd;
+}
+
+.logo-container{
+    display: flex;
+    width:200px;
+    align-items: center;
+    align-content: top;
+}
+.span{
+    color:lightslategray;
+    font-size: 13px;
+    font-family: roboto;
+   
+} */
+/* index.css */
+
+.main-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .form-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+  label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  .input[type='text'],
+  .input[type='number'] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin:10px;
+    cursor:pointer;
+  }
+  
+  .button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  .logout{
+    background-color:darkblue;
+    color: white;
+    padding: 4px;
+    border-radius:4px;
+    width: 100px;
+    cursor:pointer;
+  }
+  
+  .heading {
+    margin: 0;
+    color: blue;
+  }
+  
+  .span {
+    font-size: 14px;
+    font-weight: normal;
+    color: #888;
+  }
+  .button-container{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    
+  }
+  @media screen and (max-width:778px){
+    .logo {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+      }
+      .heading{
+        font-family:roboto;
+        color: blue;
+      }
+      .span{
+        font-size: 10px;
+      }
+  }
