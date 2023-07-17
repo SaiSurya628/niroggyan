@@ -1,0 +1,75 @@
+.main-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+  .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+  label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  .input[type='text'],
+  .input[type='number'] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+
+  .update-button{
+    background-color: darkblue;
+    color:white;
+    font-family: roboto;
+    width:100px;
+    border-radius: 4px;
+    padding: 10px;
+  }
+  
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  
+  .heading {
+    margin: 0;
+    color: blue;
+  }
+  
+  .span {
+    font-size: 14px;
+    font-weight: normal;
+    color: #888;
+  }
+
+.button-container{
+    display: flex;
+    justify-content: center;
+
+}
